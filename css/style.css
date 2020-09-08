@@ -1,0 +1,206 @@
+/*
+Theme Name: Tile Mart
+Theme URI: 
+Author: Tile Mart
+Author URI: http://wordpress.org/
+Description: description 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: tilemart
+*/
+
+html,
+body {
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    font-size: 18px;
+    color: #101010;
+    direction: ltr;
+    font-family: 'Gotham';
+    background: #fff;
+    font-weight: 300;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+form,
+input,
+ul,
+li {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+::selection {
+    background: #3777bb;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #3777bb;
+    color: #fff;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color:#101010;
+    transition: color 0.8s;
+}
+a:hover { color:#00a2ff; }
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a img {
+    border: 0px;
+    outline: none;
+}
+
+.clear {
+    clear: both;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0px;
+}
+
+td {
+    padding: 0;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix::after {
+    clear: both;
+}
+.btn.focus, .btn:focus, button:focus {
+    outline: 0;
+    box-shadow:none;
+}
+
+
+/* ----- Header Style ----- */
+header { position: relative; -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5); }
+header ul li a { font-size: 16px; font-weight: 500; padding:.5rem 1rem !important; }
+.user_icon { background-color: #00a2ff; border-radius: 30px; line-height: 35px; color:#fff; width:35px; height: 35px; display: inline-block; margin-left: 15px; text-align: center; }
+.navbar-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar .fa-user-o { font-size:18px; line-height: 35px;  }
+
+.banner { background:url('../images/banner-bg.png') center top no-repeat; background-size: cover; padding:60px 0 80px 0; }
+.banner h1 { font-size:55px; }
+.banner h4 { line-height: 35px; }
+.blue-btn { background:#00a2ff; padding:10px 20px; border:0; font-size:18px; border-radius: 7px; text-transform: uppercase; }
+.blue-btn:hover { background:#101010; }
+.blue-btn:active { background-color:#101010 !important; border-color:#101010 !important; box-shadow:0 0 0 0.2rem rgba(1,1,1,.5) !important; }
+.banner-text { padding: 3rem 0; }
+.banner_img img {  margin-bottom: -80px; }
+.divider { width:200px; height: 3px; background:#ffd85b; margin:0px auto; }
+.m-heading { font-size:45px; margin-bottom: 15px; text-transform: lowercase; }
+.s-heading { font-size: 40px; font-family: 'Soria'; line-height: 32px; }
+.p-8 { padding:80px 0; }
+
+.modal-content .close { position: absolute; right: -10px; background: #ffd85b; border-radius: 30px; -webkit-box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.20); -moz-box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.20); box-shadow: 0px 0px 14px -4px rgba(0,0,0,0.20); height: 30px; width: 30px; font-size: 28px; opacity: 1; top:-14px; text-align: center; }
+.grey-bg { background-color: #f2f2f2; }
+.video_icon { background:#fff; border:16px solid #facb33; border-radius:100px; height: 170px; width:170px; line-height: 170px; text-align: center; display: block; position: absolute; top:50%; transform: translateY(-50%); left:0; right:0; margin:0px auto;}
+.video_icon .fa-play { font-size:90px; color:#facb33; margin-left: 18px; margin-top:25px;}
+.col-description { margin-left: 25px; }
+.col-description h4, .ourMission h4 { margin-bottom: 12px; font-size:26px;}
+.col-description p { margin-bottom: 12px; }
+.col-description a, .ourMission a { color:#f8b431; font-weight: 600;}
+.col-description a:hover { color:#00a2ff; }
+.ourMission a:hover { color:#00a2ff; }
+
+.greyBg { background-color: #f2f2f2; } 
+.blueTitle { color:#00a2ff; font-size:45px; }
+.futuraTitle { font-size:40px;  font-family: 'Futura Bk BT';}
+.futuraTitle span { font-family: 'Futura BT'; }
+.InnerpageContent p { font-size:22px; }
+.lightGreyBg { background-color: #e3e4e4; }
+.imgTitle { color:#00a2ff; font-size:27px; text-transform: uppercase; }
+.GreyBgTitle { font-family: 'Futura BT'; font-size:30px; }
+
+.roundedImg { width:328px; height: 328px; margin:0px auto; border-radius: 50%; }
+.roundedImg img { width:100%; }
+
+footer ul li { margin:0px 15px; display: inline-block;}
+footer ul li a { font-size:16px; font-weight: 500;  }
+footer p { font-size:14px; margin:14px 0; }
+footer .socialLinks li { margin:0px 10px; }
+footer .socialLinks li a { color:#f8b431; }
+
+@media (max-width:1200px) {
+ .banner-text { padding: 0; }
+ .navbar .navbar-nav.ml-5 { margin-left:0 !important; }
+}
+@media (max-width:991px) {
+  .banner h1 { font-size:42px; }
+  .banner h4 { font-size:18px; }
+  .video_icon { width:100px; height: 100px; line-height: 100px; border:6px solid #facb33; }
+  .video_icon .fa-play { font-size:50px; margin-top:18px; margin-left: 10px;}
+  .navbar-toggler { position: absolute; right:0; top:12px; }
+  .UserName { position: absolute; right:70px; top:8px; }
+  .m-heading { font-size:34px; }
+  .s-heading { font-size:32px; }
+  .navbar-collapse { background:#101010; }
+  .navbar-collapse li a{ color:#fff !important; }
+  .navbar-nav.align-items-center { align-items: initial !important; }
+  .navbar-collapse li:hover { background:#00a2ff; }
+  }
+@media (max-width:767px) {
+  .banner_img img { margin-top:30px; }
+  .blueTitle { font-size:28px; }
+  .futuraTitle { font-size:28px; }
+  .InnerpageContent p { font-size:18px; }
+  .roundedImg { width:200px; height: 200px; margin:0px auto; border-radius: 50%; } 
+}
+@media (max-width:600px) {
+  .banner h1 { font-size:33px; }
+  }
+@media (max-width:480px) {
+  .m-heading { font-size:26px; }
+  .s-heading{ font-size:28px; }
+  .col-description h4, .ourMission h4 { font-size:20px; }
+  .video_icon { width:70px; height: 70px; line-height: 70px; }
+  .video_icon .fa-play { font-size:30px; margin-top:0px; margin-left: 8px; }
+  .UserName h6 { font-size:0px; }
+}
+
